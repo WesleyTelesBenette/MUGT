@@ -1,35 +1,15 @@
 <header>
-
     <app-logo />
-
-    <!-- Transformar num Componente-->
-    <div class="buttons">
-        <p>Botão 1</p>
-        <p>Botão 2</p>
-        <p>Botão 3</p>
-    </div>
+    <app-links />
 </header>
 
 <main>
     <hr class="divider b-light" />
     <h2 class="title t-normal">Atributos do Usuário</h2>
 
-    <!-- Transformar num Componente-->
-    <div class="attributes">
-        <div class="attribute b-dark t-normal">Nome</div>
-        <div class="attribute b-dark t-normal">CPF</div>
-        <div class="attribute b-dark t-normal">Idade</div>
-        <div class="attribute b-dark t-normal">RG</div>
-        <div class="attribute b-dark t-normal">Data de Nascimento</div>
-    </div>
-
+    <app-attributes class="center-w" />
     <hr class="divider b-light" />
-
-    <div class="inputs">
-        <input class="button b-normal t-normal" type="button" onclick="managementAttributes()"
-            value="Gerenciar Atributos" />
-        <input class="button b-normal t-normal" type="button" onclick="generatedClick()" value="Gerar Usuário" />
-    </div>
+    <app-buttons />
 </main>
 
 <footer>

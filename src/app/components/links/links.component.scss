@@ -1,0 +1,18 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    user-select: none;
+}
+
+.link {
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
