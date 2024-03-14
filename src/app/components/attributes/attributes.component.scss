@@ -1,23 +1,23 @@
 .attributes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
 
-  user-select: none;
+	user-select: none;
 
-  width: 80%;
-  height: 100%;
+	width: 80%;
+	height: 100%;
 
-  .attribute {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	.attribute {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    width: 150px;
-    aspect-ratio: 3 / 1;
+		width: 150px;
+		aspect-ratio: 3 / 1;
 
-    font-weight: 800;
-    text-align: center;
-  }
+		font-weight: 800;
+		text-align: center;
+	}
 }

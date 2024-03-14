@@ -1,12 +1,3 @@
 <div class="attributes">
-  <div class="attribute b-dark t-normal">Nome</div>
-  <div class="attribute b-dark t-normal">CPF</div>
-  <div class="attribute b-dark t-normal">Idade</div>
-  <div class="attribute b-dark t-normal">RG</div>
-  <div class="attribute b-dark t-normal">Data de Nascimento</div>
-  <div class="attribute b-dark t-normal">Nome</div>
-  <div class="attribute b-dark t-normal">CPF</div>
-  <div class="attribute b-dark t-normal">Idade</div>
-  <div class="attribute b-dark t-normal">RG</div>
-  <div class="attribute b-dark t-normal">Data de Nascimento</div>
-</div>
+    <div *ngFor="let at of attributes" class="attribute b-dark t-normal"> {{ at }} </div>
+</div> 
