@@ -1,0 +1,48 @@
+//Colors
+$text-normal: #fff0e3;
+$text-shadow: #bdab9b;
+$accent-normal: #b68b63;
+$accent-light: hsl(26, 37%, 64%);
+$accent-dark: hsl(25, 21%, 28%);
+$accent-hyper-dark: hsl(25, 20%, 17%);
+
+$text-normal: hsl(247, 60%, 86%);
+$text-shadow: hsl(247, 60%, 86%);
+$accent-normal: hsl(248, 36%, 33%);
+$accent-light: hsl(248, 32%, 35%);
+$accent-dark: hsl(249, 36%, 15%);
+$accent-hyper-dark: hsl(251, 38%, 8%);
+
+//Backgorund
+.b-normal {
+    background-color: $accent-normal;
+}
+
+.b-light {
+    background-color: $accent-light;
+}
+
+.b-dark {
+    background-color: $accent-dark;
+}
+
+.b-hyper-dark {
+    background-color: $accent-hyper-dark;
+}
+
+
+
+//Text
+.t-normal {
+    color: $text-normal;
+}
+
+.t-shadow {
+    color: $text-shadow;
+}
+
+.t-dark {
+    color: $accent-hyper-dark;
+}
+
+//Border
