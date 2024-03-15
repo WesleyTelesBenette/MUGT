@@ -17,3 +17,17 @@ body {
   margin: 0px;
   padding: 5vh 5vw 5vh 5vw;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(249, 36%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(248, 32%, 35%);
+  border-radius: 0px;
+}
