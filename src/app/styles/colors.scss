@@ -15,34 +15,37 @@ $accent-hyper-dark: hsl(251, 38%, 8%);
 
 //Backgorund
 .b-normal {
-    background-color: $accent-normal;
+  background-color: $accent-normal;
 }
 
 .b-light {
-    background-color: $accent-light;
+  background-color: $accent-light;
 }
 
 .b-dark {
-    background-color: $accent-dark;
+  background-color: $accent-dark;
 }
 
 .b-hyper-dark {
-    background-color: $accent-hyper-dark;
+  background-color: $accent-hyper-dark;
 }
 
 
 
 //Text
 .t-normal {
-    color: $text-normal;
+  color: $text-normal;
 }
 
 .t-shadow {
-    color: $text-shadow;
+  color: $text-shadow;
 }
 
 .t-dark {
-    color: $accent-hyper-dark;
+  color: $accent-hyper-dark;
 }
 
 //Border
+.bo-light {
+  border-color: $accent-light;
+}

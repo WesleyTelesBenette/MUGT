@@ -1,5 +1,87 @@
 <div class="links">
-  <img class="link" src="./../../../assets/github.svg" width="30px" />
-  <img class="link" src="./../../../assets/info.svg" width="32px" />
-  <img class="link" src="./../../../assets/api.svg" width="35px" />
+    <a class="full btn center" href="https://github.com/WesleyTelesBenette/MUGT">
+        <img class="link" src="./../../../assets/github.svg" width="30px" />
+    </a>
+    <a class="full btn center" data-bs-toggle="modal" data-bs-target="#infoModal">
+        <img class="link" src="./../../../assets/info.svg" width="32px" />
+    </a>
+    <a class="full btn center" data-bs-toggle="modal" data-bs-target="#apiModal">
+        <img class="link" src="./../../../assets/api.svg" width="35px" />
+    </a>
+</div>
+
+<!-- Toast de aviso -->
+<div id="toast" class="toast position-fixed toast-position b-light center" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="toast-body t-normal between">
+        <p>A {{ currentCopied }} foi copiada com sucesso!</p>
+    </div>
+</div>
+
+<div class="modal fade modal-opacity" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content b-hyper-dark">
+            <div class="modal-header bo-light between">
+                <h1 class="modal-title fs-5 t-normal modal-title" id="infoModalLabel">Informações Gerais</h1>
+                <button type="button" class="b-dark modal-x t-normal" data-bs-dismiss="modal"
+                    aria-label="Close">X</button>
+            </div>
+            <div class="modal-body t-normal content-text">
+                Está aplicação é um sistema de geração de usuários, para testes de sistemas, ou seja, aqui você pode
+                gerar usuários fictícios para usar na sua aplicação.
+                <br /><br />
+                Com o botão "Gerenciar Atributos", você pode selecionar que atributos quer que esse usuário tenha,
+                assim se adptando ao sistema onde ele será inserido.
+                <br /><br />
+                Caso você precise implementar esses usuários em tempo de execução, veja como chamar nossa API no botão:
+                <br />
+                <span>
+                    <a class="btn center" data-bs-toggle="modal" data-bs-target="#apiModal"
+                        href="https://github.com/WesleyTelesBenette/MUGT">
+                        <img class="link" src="./../../../assets/api.svg" width="50px" />
+                    </a>
+                </span>
+            </div>
+            <div class="modal-footer bo-light center-w">
+                <button type="button" class="modal-button b-dark t-normal" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-opacity" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content b-hyper-dark">
+            <div class="modal-header bo-light between">
+                <h1 class="modal-title fs-5 t-normal" id="apiModalLabel">Chamar Nossa API</h1>
+                <button type="button" class="b-dark modal-x t-normal" data-bs-dismiss="modal"
+                    aria-label="Close">X</button>
+            </div>
+            <div class="modal-body t-normal content-text">
+                Para chamar nossa API, seja no Postman, na sua própria aplicação ou ferramenta de testes, você vai
+                precisar do seguinte:
+                <br /><br />
+                - URL: {{ url }}
+                <br />
+                - ROTA: {{ route }} (POST)
+
+                <br /><br />
+
+                Boa sorte nos seus testes :)
+            </div>
+            <div class="modal-footer bo-light between">
+                <div class="modal-copys">
+                    <button type="button" class="modal-copy b-dark t-normal center" (click)="copyUrl()">
+                        <img src="./../../../assets/copiar.svg" width="20px" />
+                        &nbsp; URL
+                    </button>
+                    <button type="button" class="modal-copy b-dark t-normal center" (click)="copyRoute()">
+                        <img src="./../../../assets/copiar.svg" width="20px" />
+                        &nbsp; ROTA
+                    </button>
+                </div>
+                <button type="button" class="modal-button b-dark t-normal" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
 </div>
