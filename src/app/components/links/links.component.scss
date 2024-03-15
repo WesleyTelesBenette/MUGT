@@ -1,45 +1,50 @@
 .links {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 
-  user-select: none;
+	user-select: none;
 
-  .link {
-    &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
+	.link {
+		&:hover {
+			opacity: 0.6;
+			cursor: pointer;
+		}
 
-    &:active {
-      opacity: 0.2;
-    }
-  }
+		&:active {
+			opacity: 0.2;
+		}
+	}
 }
 
 .toast-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  z-index: 2000;
-  bottom: 20px;
-  right: 20px;
-  transition: transform 0.5s;
-  transform: scaleY(0);
+	z-index: 2000;
+	bottom: 20px;
+	right: 20px;
+	transition: transform 0.5s;
+	transform: scaleY(0);
 }
 
 .toast-on {
-  transform: scaleY(1);
+	transform: scaleY(1);
 }
 
 .modal-opacity {
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  --modal-bg: rgba(0, 0, 0, 0.5);
-  --modal-box-shadow: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	--modal-bg: rgba(0, 0, 0, 0.5);
+	--modal-box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
+    .bo {
+        border-style: solid;
+        border-width: 1px;
+    }
+
 	.modal-title {
 		font-weight: 800;
 	}
@@ -64,12 +69,12 @@
 		font-weight: 800;
 
 		&:hover {
-		opacity: 0.7;
-		cursor: pointer;
+			opacity: 0.7;
+			cursor: pointer;
 		}
 
 		&:active {
-		opacity: 0.4;
+			opacity: 0.4;
 		}
 	}
 
@@ -81,12 +86,12 @@
 		font-weight: 800;
 
 		&:hover {
-		opacity: 0.7;
-		cursor: pointer;
+			opacity: 0.7;
+			cursor: pointer;
 		}
 
 		&:active {
-		opacity: 0.4;
+			opacity: 0.4;
 		}
 	}
 
