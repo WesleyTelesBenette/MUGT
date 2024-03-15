@@ -7,9 +7,9 @@
   <hr class="divider b-light" />
   <h2 class="title t-normal">Atributos do Usuário</h2>
 
-  <app-attributes class="full-w center-w" />
+  <app-attributes #attributes class="full-w center-w" />
   <hr class="divider b-light" />
-  <app-buttons />
+  <app-buttons #buttons (parentMethod)="updateList()" />
 </main>
 
 <footer>
