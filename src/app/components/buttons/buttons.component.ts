@@ -56,6 +56,13 @@ export class ButtonsComponent
         this.updateAttributes();
     }
 
+    clearAttributes(): void {
+        this.currentAttributesIndex = [];
+        this.currentAttributes = [];
+
+        this.updateAttributes();
+    }
+
     generatedClick()
     {
         console.log("fhg");

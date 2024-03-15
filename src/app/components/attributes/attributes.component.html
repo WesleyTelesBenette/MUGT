@@ -1,3 +1,4 @@
 <div class="attributes">
   <div *ngFor="let at of attributesList" class="attribute b-dark t-normal"> {{ at }} </div>
+  <p *ngIf="attributesList.length === 0" class="t-normal center">Nenhum atributo selecionado...</p>
 </div>

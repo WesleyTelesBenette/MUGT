@@ -38,11 +38,17 @@
 
     .content-text {
         line-height: 1.7em;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .content-list {
         flex-wrap: wrap;
         gap: 20px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .attribute {
