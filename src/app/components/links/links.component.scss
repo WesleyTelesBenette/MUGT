@@ -17,14 +17,6 @@
     }
 }
 
-@media only screen and (max-width: 527px) {
-    .links {
-        align-items: center;
-        justify-content: center;
-        gap: 10vw;
-    }
-}
-
 .toast-position {
     display: flex;
     justify-content: center;
@@ -70,9 +62,14 @@
         margin-bottom: 10px;
     }
 
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .modal-button {
-        min-height: 40px;
-        aspect-ratio: 5 / 1;
+        min-width: 220px;
+        min-height: 44px;
         border: none;
 
         font-weight: 800;
@@ -88,7 +85,7 @@
     }
 
     .modal-x {
-        min-height: 35px;
+        height: 35px;
         aspect-ratio: 1 / 1;
         border: none;
 
@@ -109,8 +106,8 @@
         gap: 20px;
 
         .modal-copy {
+            min-width: 100px;
             min-height: 40px;
-            aspect-ratio: 2.5 /1;
             border: none;
 
             font-weight: 800;
@@ -124,5 +121,22 @@
                 opacity: 0.4;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    .modal {
+        .modal-footer {
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    .links {
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
     }
 }

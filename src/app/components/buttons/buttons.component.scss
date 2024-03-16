@@ -61,8 +61,8 @@
 
         border-width: 1px;
         border-style: dotted;
-        width: 30%;
-        aspect-ratio: 4 / 1;
+        width: 140px;
+        min-height: 35px;
         transition: 0.3s;
 
         &:hover {
@@ -79,6 +79,12 @@
 
     .attribute-active {
         border: none;
+    }
+
+    .modal-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .modal-button {
@@ -126,6 +132,26 @@
     }
 }
 
+@media only screen and (max-width: 509px) {
+    .modal {
+        .content-list {
+            justify-content: center;
+        }
+        .attribute {
+            width: 45%;
+        }
+    }
+}
+
+@media only screen and (max-width: 457px) {
+    .modal {
+        .modal-footer {
+            justify-content: center;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 415px) {
     .buttons {
         flex-direction: column;
@@ -133,6 +159,23 @@
 
         .button {
             width: 80vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .modal {
+        .attribute {
+            width: 40%;
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .modal {
+        .attribute {
+            font-size: 0.6em;
         }
     }
 }
