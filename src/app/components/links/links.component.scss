@@ -1,42 +1,51 @@
 .links {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
-	user-select: none;
+    user-select: none;
 
-	.link {
-		&:hover {
-			opacity: 0.6;
-			cursor: pointer;
-		}
+    .link {
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
 
-		&:active {
-			opacity: 0.2;
-		}
-	}
+        &:active {
+            opacity: 0.2;
+        }
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    .links {
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+    }
 }
 
 .toast-position {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-	z-index: 2000;
-	bottom: 20px;
-	right: 20px;
-	transition: transform 0.5s;
-	transform: scaleY(0);
+    z-index: 2000;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.5s;
+    transform: scaleY(0);
 }
 
 .toast-on {
-	transform: scaleY(1);
+    transform: scaleY(1);
 }
 
 .modal-opacity {
-	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.5);
-	--modal-bg: rgba(0, 0, 0, 0.5);
-	--modal-box-shadow: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    --modal-bg: rgba(0, 0, 0, 0.5);
+    --modal-box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
@@ -45,75 +54,75 @@
         border-width: 1px;
     }
 
-	.modal-title {
-		font-weight: 800;
-	}
+    .modal-title {
+        font-weight: 800;
+    }
 
-	.divider {
-		border: none;
-		border-color: red;
-	}
+    .divider {
+        border: none;
+        border-color: red;
+    }
 
-	.content-text {
-		line-height: 1.7em;
+    .content-text {
+        line-height: 1.7em;
 
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-	.modal-button {
-		min-height: 40px;
-		aspect-ratio: 5 / 1;
-		border: none;
+    .modal-button {
+        min-height: 40px;
+        aspect-ratio: 5 / 1;
+        border: none;
 
-		font-weight: 800;
+        font-weight: 800;
 
-		&:hover {
-			opacity: 0.7;
-			cursor: pointer;
-		}
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
 
-		&:active {
-			opacity: 0.4;
-		}
-	}
+        &:active {
+            opacity: 0.4;
+        }
+    }
 
-	.modal-x {
-		min-height: 35px;
-		aspect-ratio: 1 / 1;
-		border: none;
+    .modal-x {
+        min-height: 35px;
+        aspect-ratio: 1 / 1;
+        border: none;
 
-		font-weight: 800;
+        font-weight: 800;
 
-		&:hover {
-			opacity: 0.7;
-			cursor: pointer;
-		}
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
 
-		&:active {
-			opacity: 0.4;
-		}
-	}
+        &:active {
+            opacity: 0.4;
+        }
+    }
 
-	.modal-copys {
-		display: flex;
-		gap: 20px;
+    .modal-copys {
+        display: flex;
+        gap: 20px;
 
-		.modal-copy {
-			min-height: 40px;
-			aspect-ratio: 2.5 /1;
-			border: none;
+        .modal-copy {
+            min-height: 40px;
+            aspect-ratio: 2.5 /1;
+            border: none;
 
-			font-weight: 800;
+            font-weight: 800;
 
-			&:hover {
-				opacity: 0.7;
-				cursor: pointer;
-			}
+            &:hover {
+                opacity: 0.7;
+                cursor: pointer;
+            }
 
-			&:active {
-				opacity: 0.4;
-			}
-		}
-	}
+            &:active {
+                opacity: 0.4;
+            }
+        }
+    }
 }
