@@ -4,6 +4,7 @@ header {
     flex-wrap: nowrap;
     gap: 20px;
     justify-content: space-between;
+    padding: 0px 5vw 0px 5vw;
 
     width: 100%;
     margin-top: 0px;
@@ -20,6 +21,7 @@ main {
     flex-wrap: wrap;
     gap: 50px;
     align-items: center;
+    padding: 0px 5vw 0px 5vw;
 
     $font-title: "Quicksand", Arial, Helvetica, sans-serif;
 
@@ -39,6 +41,12 @@ main {
     }
 }
 
+footer {
+    bottom: 0px;
+    margin-top: 10vh;
+    padding: 25px;
+}
+
 @media only screen and (max-width: 590px) {
     main {
         gap: 40px;
@@ -53,7 +61,7 @@ main {
 @media only screen and (max-width: 527px) {
     header {
         flex-wrap: wrap;
-        margin-bottom:25px;
+        margin-bottom: 25px;
 
         app-links {
             width: 100%;
