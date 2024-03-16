@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
     styleUrl: './attributes.component.scss'
 })
 export class AttributesComponent {
-    attributesList: string[] = ["Nome", "cPF", "macaco", "Zero", "Fernanda", "Naruto", "kksexo"];
+    attributesList: string[] = [];
 }
