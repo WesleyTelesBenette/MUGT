@@ -1,20 +1,23 @@
-<header>
-	<app-logo class="full-w" />
-	<app-links />
-</header>
+<div class="between-c">
+    <div>
+        <header>
+        <app-logo class="full-w" />
+        <app-links />
+        </header>
 
-<main>
-	<hr class="divider b-light" />
-	<h2 class="title t-normal">Atributos do Usuário</h2>
+        <main>
+        <hr class="divider b-light" />
+        <h2 class="title t-normal">Atributos do Usuário</h2>
 
-	<app-attributes #attributes class="full-w center-w" />
-	<hr class="divider b-light" />
-	<app-buttons #buttons (parentMethod)="updateList()" />
-</main>
-
-<footer class="b-dark">
-    <div class="t-normal center">
-        by Wesley T. Benette
+        <app-attributes #attributes class="full-w center-w" />
+        <hr class="divider b-light" />
+        <app-buttons #buttons (parentMethod)="updateList()" />
+        </main>
     </div>
 
-</footer>
+    <footer class="b-dark">
+        <div class="t-normal center">
+            by Wesley T. Benette
+        </div>
+    </footer>
+</div>
