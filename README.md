@@ -3,9 +3,7 @@ Um sistema de geração de usuário para testes, tanto de software, quanto para 
 
 ## ⚠️ AVISO
 Por hora, a aplicação não está em funcionamento pleno, pois:
-- A sua API ainda está em construção;
-- O "footer" do site ainda não existe;
-- A responsividade do site não está em dia.
+- A sua API ainda está em construção.
 
 ## 📌 Forma de Uso
 Se você não é um programador, imagino que chamar uma API na sua aplicação não seria uma opção válida.
