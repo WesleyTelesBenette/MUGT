@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class LogoComponent {
     title: string = 'MUGT';
-    subtitle: string = 'My User Generated for Testing';
+    subtitle: string = 'My User Generate for Testing';
 }
